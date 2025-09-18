@@ -67,14 +67,22 @@
 <pre><code class="language-sh">❯ npm install
 </code></pre>
 <h3>Usage</h3>
-<p>Run the project with:</p>
+<p>Run MCP Server:</p>
 <p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
-<pre><code class="language-sh">npm start
+<pre><code class="language-sh">node time-server.js
 </code></pre>
-<h3>Testing</h3>
+<h3>Add MCP configuration in your Client</h3>
 <p>Model-context-protocol-time-server uses the {<strong>test_framework</strong>} test framework. Run the test suite with:</p>
 <p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
-<pre><code class="language-sh">npm test
+<pre><code class="language-sh">{
+  "mcpServers": {
+    "time-server": {
+      "command": "node",
+      "args": ["D:/Projects/time-server/time-server.js"]
+    }
+  }
+}
+
 </code></pre>
 <hr>
 <div align="left" class=""><a href="#top">⬆ Return</a></div>
